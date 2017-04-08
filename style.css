@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+  padding: 0px 0px 0px 0.5em;
+}
+#contact {
+  text-align: center;
+  padding: 0px 0px 0px 1em;
+}
+a {
+  text-decoration:none;
+  color: #000;
+  padding: 5px;
+  margin: 0px 5px 0px 5px;
+}
+div {
+  background-color: white;
+  border-radius: 10px;
+  margin: 15px;
+}
+button {
+  margin: -1em 0px 1em 1.5em;
+}
+.project {
+  font-size: 1.8em;
+  padding: 0px 0px 0.35em 0px;
+  text-decoration: underline;
+}
+h2 {
+  padding: 0.4em 0.3em 10px 15px;
+  border-bottom: solid;
+  background-color: red;
+  border-top: solid;
+}
+p {
+  padding: 0px 1em 0px 0.5em;
+  font-size: 1.5em;
+  margin: 10px 0px 1em 5px;
+}
+img {
+  float: left;
+  margin: 0px 0p 0px 0px;
+  padding: 0px 10px 0px 0px;
+  border-radius: 10px;
+}
