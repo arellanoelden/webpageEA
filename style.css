@@ -9,8 +9,8 @@ h1 {
 a {
   text-decoration:none;
   color: #000;
-  padding: 5px;
-  margin: 0px 5px 0px 5px;
+  padding: 0px 0px 0px 5px;
+  margin: 0px 5px 0em 5px;
 }
 div {
   background-color: white;
@@ -18,7 +18,7 @@ div {
   margin: 15px;
 }
 button {
-  margin: -1em 0px 1em 1.5em;
+  margin: -1em 0px 3em 1.5em;
 }
 .project {
   font-size: 1.8em;
