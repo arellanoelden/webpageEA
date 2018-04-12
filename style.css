@@ -1,44 +1,32 @@
-h1 {
+h1,h2 {
   text-align: center;
-  padding: 0px 0px 0px 0.5em;
-}
-#contact {
-  text-align: center;
-  padding: 0px 0px 0px 1em;
-}
-a {
-  text-decoration:none;
-  color: #000;
-  padding: 0px 0px 0px 5px;
-  margin: 0px 5px 0em 5px;
-}
-div {
-  background-color: white;
-  border-radius: 10px;
-  margin: 15px;
-}
-button {
-  margin: -1em 0px 3em 1.5em;
-}
-.project {
-  font-size: 1.8em;
-  padding: 0px 0px 0.35em 0px;
-  text-decoration: underline;
 }
 h2 {
-  padding: 0.4em 0.3em 10px 15px;
-  border-bottom: solid;
-  background-color: red;
-  border-top: solid;
-}
-p {
-  padding: 0px 1em 0px 0.5em;
+  margin-bottom: 3vh;
   font-size: 1.5em;
-  margin: 10px 0px 1em 5px;
 }
-img {
+#contact {
+  margin-left: 41%;
+}
+ul {
+  list-style: none;
+}
+#prof li, #expr li, #personal li {
+  margin-left: -1.5vw;;
+}
+#prof {
+  margin-left: 30vw;
   float: left;
-  margin: 0px 0p 0px 0px;
-  padding: 0px 10px 0px 0px;
-  border-radius: 10px;
+  height: 20vh;
+}
+#expr {
+  margin-right: 30vw;
+  float: right;
+  height: 20vh;
+}
+strong {
+  font-size: 1.1em;
+}
+#proj, #work {
+  clear: both;
 }
