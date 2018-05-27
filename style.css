@@ -1,0 +1,32 @@
+h1,h2 {
+  text-align: center;
+}
+h2 {
+  margin-bottom: 3vh;
+  font-size: 1.5em;
+}
+#contact {
+  margin-left: 41%;
+}
+ul {
+  list-style: none;
+}
+#prof li, #expr li, #personal li {
+  margin-left: -1.5vw;;
+}
+#prof {
+  margin-left: 30vw;
+  float: left;
+  height: 20vh;
+}
+#expr {
+  margin-right: 30vw;
+  float: right;
+  height: 20vh;
+}
+strong {
+  font-size: 1.1em;
+}
+#proj, #work {
+  clear: both;
+}

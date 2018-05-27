@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FF0000" />
+    <link rel="manifest" href="manifest.json">
+    <style>
+      h3 li {
+        height: 5vh;
+      }
+      img {
+        height: 5vh;
+      }
+      h1,h2 {
+        text-align: center;
+      }
+      h2 {
+        margin-bottom: 3vh;
+        font-size: 1.5em;
+      }
+      #contact {
+        margin-left: 44%;
+      }
+      ul {
+        list-style: none;
+      }
+      #prof li, #expr li, #personal li {
+        margin-left: -1.5vw;
+      }
+      #prof {
+        margin-left: 30vw;
+        float: left;
+        margin-bottom: 2vh;
+      }
+      #expr {
+        margin-right: 30vw;
+        float: right;
+        margin-bottom: 2vh;
+      }
+      strong {
+        font-size: 1.1em;
+      }
+      #proj, #work {
+        clear: both;
+      }
+      #front > p {
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
+      }
+      @media (max-width: 1450px) {
+        #contact {
+          margin-left: 39%;
+        }
+      } 
+      @media (max-width: 1280px) {
+        #contact {
+          margin-left: 35%;
+        }
+      } 
+      @media (max-width: 1280px) {
+        #contact {
+          margin-left: 35%;
+        }
+      }  
+      @media (max-width: 970px) {
+        #contact {
+          margin-left: 30%;
+        }
+        #prof, #expr {
+          float: none;
+          display: block;
+          margin-left: 39vw; 
+        }
+      }  
+      @media (max-width: 600px) {
+        #contact {
+          margin-left: 15%;
+        }
+        #prof, #expr {
+          margin-left: 32vw; 
+        }
+      }
+      @media (max-width: 450px) {
+        #contact {
+          margin-left: 8%;
+        }
+        #prof, #expr {
+          margin-left: 30vw; 
+        }
+      }  
+      @media (max-width: 400px) {
+        #contact {
+          margin-left: 2%;
+        }
+        #prof, #expr {
+          margin-left: 30vw; 
+        }
+      }  
+    </style>
+    <script src="sw.js" defer></script>
+    <script src="app.js" defer></script>
+    <title>My Site</title>
+  </head>
+  <body>
+    <div id="info">
+      <h1>Elden Arellano</h1>
+      <ul id="contact">
+        <li><strong>Email:</strong> arellanoelden11@yahoo.com</li>
+        <li><strong>Occupation:</strong> Student 4th year at UCSD</li>
+        <li><strong>Github:</strong> <a href="https://github.com/arellanoelden">Click Here</a></li>
+      </ul>
+    </div>
+    <hr />
+    <div id="tech">
+      <h2>Languages/Frameworks:</h2>
+      <span id="prof">
+        <strong>Proficient:</strong>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS(Vanilla, React, and JQuery)</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>C,C++</li>
+          <li>SQL</li>
+        </ul>
+      </span>
+      <div id="expr">
+        <strong>Experience With:</strong>
+        <ul>
+          <li>AngularJS</li>
+          <li>Bash</li>
+          <li>Bootstrap</li>
+          <li>XML</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+      <div id="work">
+        <h2>Work Experience:</h2>
+        <ul>
+          <li><strong>Tutor:</strong><p>I have tutored for UCSD for 2 different courses. One course was CSE140L which involved the students using verilog and bsv for their programming assignments. The other class was CSE134 which involved web development where I aided students in first creating sites using just HTML,CSS, and Vanilla JS. Later they replaced the HTML with  ReactJS as well as Redux and I aided many students in explaining concepts as well as helping debug their code.</p></li>
+          <li><strong>Webmaster/Webmaster Assistant</strong><p>For 1.5 years now I have been the webmaster for the Leichtag Foundation on campus where I update the site continually as things need to get posted. For the second half of 2017 I worked at CAIDA located at the Super Computer Center in UCSD. Here I also updated the site but also added functionality to many of the pages using Vanilla JS,Jquery, Python, and Bash.</p></li>
+        </ul>
+      </div>
+      <div id="proj">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong><a href="https://github.com/arellanoelden/teamwatchfinal">TeamWatch:</a></strong><p>Created a progressive web application to manage a soccer team where there is the coach, player, and parent users. Coaches can edit while players and parents can view. Full CRUD support, uses the firebase database, full offline support. Created in Vanilla JS, currently working on translating to ReactJS as well.</p></li>
+          <li><strong><a href="https://github.com/aamirrasheed/ucsdplanner">Planit Triton</a></strong><p>Team for CSE110 that got voted by fellow classmates as best project in entire class out of 20 teams. Created a hub of information for the schedule of classes, ratemyprofessor, and CAPE’s in our app planittriton and helped program the UI along with the database.</p></li>
+          <li><strong><a href="https://github.com/arellanoelden/reactExample">React App Unnamed</a></strong><p>Have a reactapp that uses Redux to have full crud support for several lists of items, chat, login etc using several components with react-router. </p></li>
+        </ul>
+      </div>
+      <div id="front">
+        <h2>Front end experience</h2>
+        <p> Here is my relatively simple webpage but I have used some good techniques to ensure that this site is a good example of how I develop. First off is speed, a site needs to be fast. This site is also a progressive web app(PWA) where files get cached and on mobile devices they can be installed directly to the device. In many of my other projects seen on <a href="https://github.com/arellanoelden">github</a> I also add progressive web apps and also have experience using React, Angular, and creating accelerated mobile pages(AMP). The client experience is crucial and often times developer make moves that help them on the developer experience such as using a js library but that can cause a much larger download to the user. Many forget to optimize images,change resolutions, lazy load images and so much more to increase the user experience. Look and feel are also important, things like material UI libraries can still be good especially if served locally, minimized or done through a cdn but in the end one should ensure the user experience is as high as can be.</p>
+      </div>
+    </div>
+    <hr />
+    <div id="personal">
+      <h2>About Me</h2>
+      <h3>Background:</h3>
+      <p> I have lived in California my entire life and spent most of life living in
+        Victorville. When I first moved there was a pretty small town but after so many
+        years is actually rather large. It may still be known as "that stop on the way to Vegas"
+        but I enjpyed my time there. Growing up I was always fascinated with computers and
+        technology. I would keep up to date with cool apps for my phone or the newest
+        smartphone. I also have always enjoyed active activites such as hiking, sports,
+        running, etc.</p>
+      <h3>Hobbies:</h3>
+        <ul>
+          <li><strong>Soccer:</strong><p>From about age 4 to age 19 I played soccer constantly. Sometimes even being on 2 teams at once. Practice every single day, games on weekeneds etc. Nowadays I dont get to play every day and I certainly am not as good as I used to be but I still enjoy going out to play and having a good time.</p></li>
+          <li><strong>TV Shows/Movies:</strong><p>Just like anyone else ever I enjoy a good 
+          movie or TV Show. Some key ones have been Game of Throns, Parks and Rec, Breaking Bad,
+          Daredevil and so on and so forth. As for movies usually enjoy seeing any of the 
+            MCU movies or really anything that my group of friends want to watch I'm always down.</p></li>
+          <li><strong>Fitness</strong><p>Having grown up doing sports every single year I 
+          enjoy doing active things liek hiking, running, etc. So I do my best to stay fit by
+          going to the gym, try to eat healthy(don't always do this one), go running, play 
+            sports, etc.</p></li>
+        </ul>
+    </div>
+    <br/>
+  </body>
+</html>
