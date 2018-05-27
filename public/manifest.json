@@ -1,0 +1,25 @@
+{
+  "short_name": "eapage",
+  "name": "eapage",
+  "icons": [
+    {
+      "src": "./profile_pic25.jpg",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "./profile_pic50.jpg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./profile_pic100.jpg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#002856",
+  "theme_color": "#002856",
+  "display": "standalone"
+}
