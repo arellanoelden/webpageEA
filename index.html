@@ -5,6 +5,7 @@
     <meta name="theme-color" content="#FF0000" />
     <link rel="manifest" href="manifest.json">
     <style>
+      .plist {padding-left: 0;}
       h3 li {
         height: 5vh;
       }
@@ -19,7 +20,7 @@
         font-size: 1.5em;
       }
       #contact {
-        margin-left: 44%;
+        text-align: center;
       }
       ul {
         list-style: none;
@@ -47,55 +48,51 @@
         margin-left: 1.5vw;
         margin-right: 1.5vw;
       }
-      @media (max-width: 1450px) {
-        #contact {
-          margin-left: 39%;
-        }
-      } 
-      @media (max-width: 1280px) {
-        #contact {
-          margin-left: 35%;
-        }
-      } 
-      @media (max-width: 1280px) {
-        #contact {
-          margin-left: 35%;
-        }
-      }  
+      #slider {
+        width: 80%;
+        margin-left: 10%;
+      }
+      #cimg {
+        width: 35vw;
+        height: 35vh;
+        margin-left: 25%;
+      }
+      #cdesc {
+        width: 100%;
+        margin-left: 0%;
+      }
+      #slider button#prev {
+        margin-left: 45%;
+      }
+      .expandButton { margin-left: 2vw;}
       @media (max-width: 970px) {
-        #contact {
-          margin-left: 30%;
-        }
         #prof, #expr {
           float: none;
           display: block;
           margin-left: 39vw; 
         }
       }  
-      @media (max-width: 600px) {
-        #contact {
-          margin-left: 15%;
-        }
+      #pdesc1,#pdesc2,#pdesc3 {
+        display: none;
+      }
+      #proj li {
+        margin-bottom: 2vh;
+      }
+     /* @media (max-width: 600px) {
         #prof, #expr {
           margin-left: 32vw; 
         }
       }
       @media (max-width: 450px) {
-        #contact {
-          margin-left: 8%;
-        }
         #prof, #expr {
           margin-left: 30vw; 
         }
       }  
       @media (max-width: 400px) {
-        #contact {
-          margin-left: 2%;
-        }
         #prof, #expr {
           margin-left: 30vw; 
         }
-      }  
+      }*/  
     </style>
     <script src="sw.js" defer></script>
     <script src="app.js" defer></script>
@@ -115,7 +112,7 @@
       <h2>Languages/Frameworks:</h2>
       <span id="prof">
         <strong>Proficient:</strong>
-        <ul>
+        <ul class="plist">
           <li>HTML</li>
           <li>CSS</li>
           <li>JS(Vanilla, React, and JQuery)</li>
@@ -127,7 +124,7 @@
       </span>
       <div id="expr">
         <strong>Experience With:</strong>
-        <ul>
+        <ul class="plist">
           <li>AngularJS</li>
           <li>Bash</li>
           <li>Bootstrap</li>
@@ -144,10 +141,10 @@
       </div>
       <div id="proj">
         <h2>Projects</h2>
-        <ul>
-          <li><strong><a href="https://github.com/arellanoelden/teamwatchfinal">TeamWatch:</a></strong><p>Created a progressive web application to manage a soccer team where there is the coach, player, and parent users. Coaches can edit while players and parents can view. Full CRUD support, uses the firebase database, full offline support. Created in Vanilla JS, currently working on translating to ReactJS as well.</p></li>
-          <li><strong><a href="https://github.com/aamirrasheed/ucsdplanner">Planit Triton</a></strong><p>Team for CSE110 that got voted by fellow classmates as best project in entire class out of 20 teams. Created a hub of information for the schedule of classes, ratemyprofessor, and CAPE’s in our app planittriton and helped program the UI along with the database.</p></li>
-          <li><strong><a href="https://github.com/arellanoelden/reactExample">React App Unnamed</a></strong><p>Have a reactapp that uses Redux to have full crud support for several lists of items, chat, login etc using several components with react-router. </p></li>
+        <ul id="project_list">
+          <li><strong><a href="https://github.com/arellanoelden/teamwatchfinal?files=1">TeamWatch:</a></strong><button class="expandButton" id="expand1" onclick="toggleDisplay('1')">Expand</button><p id="pdesc1">Created a progressive web application to manage a soccer team where there is the coach, player, and parent users. Coaches can edit while players and parents can view. Full CRUD support, uses the firebase database, full offline support. Created in Vanilla JS, currently working on translating to ReactJS as well.</p></li>
+          <li><strong><a href="https://github.com/aamirrasheed/ucsdplanner?files=1">Planit Triton</a></strong><button class="expandButton" id="expand2" onclick="toggleDisplay('2')">Expand</button><p id="pdesc2">Team for CSE110 that got voted by fellow classmates as best project in entire class out of 20 teams. Created a hub of information for the schedule of classes, ratemyprofessor, and CAPE’s in our app planittriton and helped program the UI along with the database.</p></li>
+          <li><strong><a href="https://github.com/arellanoelden/reactExample?files=1">React App Unnamed</a></strong><button class="expandButton" id="expand3" onclick="toggleDisplay('3')">Expand</button><p id="pdesc3">Have a reactapp that uses Redux to have full crud support for several lists of items, chat, login etc using several components with react-router. </p></li>
         </ul>
       </div>
       <div id="front">
@@ -167,7 +164,7 @@
         smartphone. I also have always enjoyed active activites such as hiking, sports,
         running, etc.</p>
       <h3>Hobbies:</h3>
-        <ul>
+        <!--<ul>
           <li><strong>Soccer:</strong><p>From about age 4 to age 19 I played soccer constantly. Sometimes even being on 2 teams at once. Practice every single day, games on weekeneds etc. Nowadays I dont get to play every day and I certainly am not as good as I used to be but I still enjoy going out to play and having a good time.</p></li>
           <li><strong>TV Shows/Movies:</strong><p>Just like anyone else ever I enjoy a good 
           movie or TV Show. Some key ones have been Game of Throns, Parks and Rec, Breaking Bad,
@@ -177,8 +174,63 @@
           enjoy doing active things liek hiking, running, etc. So I do my best to stay fit by
           going to the gym, try to eat healthy(don't always do this one), go running, play 
             sports, etc.</p></li>
-        </ul>
+        </ul>-->
     </div>
-    <br/>
+    <div id="slider">
+      <div id="cslide">
+        <img src="profile_pic25.jpg" id="cimg"/>
+        <p id="cdesc"></p>
+      </div>
+      <button id="prev" onclick="prevSlide()">&#8592;</button>
+      <button id="next" onclick="nextSlide()">&#8594;</button>
+    </div>
+    <br/> 
+    <script>
+      var index = 0;
+      var slides = [
+        {"img": "barca.jpg","description": "<b>Soccer:</b> From about age 4 to age 19 I played soccer constantly. Sometimes even being on 2 teams at once. Practice every single day, games on weekeneds etc. Nowadays I dont get to play every day and I certainly am not as good as I used to be but I still enjoy going out to play and having a good time."},
+        {"img": "got.jpeg","description": "<b>Tv shows/Movies:</b> Just like anyone else ever I enjoy a good  movie or TV Show. Some key ones have been Game of Throns, Parks and Rec, Breaking Bad, Daredevil and so on and so forth. As for movies usually enjoy seeing any of the MCU movies or really anything that my group of friends want to watch I'm always down."},
+        {"img": "hiking.png", "description": "<b>Fitness</b>: Having grown up doing sports every single year I enjoy doing active things liek hiking, running, etc. So I do my best to stay fit by going to the gym, try to eat healthy(don't always do this one), go running, play sports, etc."}
+      ];
+      var currImg = document.querySelector('#cslide img');
+      currImg.src = slides[index]["img"];
+      var currDes = document.querySelector('#cslide p');
+      currDes.innerHTML = slides[index]["description"];
+      function nextSlide() {
+        if(index == slides.length - 1) {
+          index = 0;
+        }
+        else {
+          index++;
+        }
+        var currImg = document.querySelector('#cslide img');
+        currImg.src = slides[index]["img"];
+        var currDes = document.querySelector('#cslide p');
+        currDes.innerHTML = slides[index]["description"];
+      }
+      function prevSlide() {
+        if(index == 0) {
+          index = slides.length - 1;
+        }
+        else {
+          index--;
+        }
+        var currImg = document.querySelector('#cslide img');
+        currImg.src = slides[index]["img"];
+        var currDes = document.querySelector('#cslide p');
+        currDes.innerHTML = slides[index]["description"];
+      }
+      function toggleDisplay(index) {
+        var text = document.getElementById('pdesc' + index);
+        if(text.style.display != "block") {
+          text.style.display = "block";
+          document.getElementById("expand" + index).innerHTML = "Collapse";
+        }
+        else {
+          text.style.display = "none";
+          document.getElementById("expand" + index).innerHTML = "Expand"
+        }
+      }
+    </script>
   </body>
 </html>
